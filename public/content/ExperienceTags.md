@@ -1,0 +1,4 @@
+Work
+Internship
+Education
+Other
