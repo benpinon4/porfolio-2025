@@ -23,16 +23,16 @@ import OtherProjectsArray from "./OtherProjectsArray";
 import TagsArray from "./TagsArray";
 
 export default function Projects({ color }) {
-    const projects = ProjectsArray();
-    const others = OtherProjectsArray();
-    const options = TagsArray("ProjectsTags");
-    
-    const [selected, setSelected] = useState("All");
+  const projects = ProjectsArray();
+  const others = OtherProjectsArray();
+  const options = TagsArray("ProjectsTags");
 
-    const handleSelected = (value) => {
-      setSelected(value);
-    };
-    
+  const [selected, setSelected] = useState("All");
+
+  const handleSelected = (value) => {
+    setSelected(value);
+  };
+
   return (
     <>
       <Container maxW={"3xl"} id="projects">
@@ -71,11 +71,17 @@ export default function Projects({ color }) {
 
                       <HStack py={2}>
                         {project.buttons.map((button) => (
-                          <a key={button.text} href={button.href}>
-                            <Button color={`${color}.400`}>
-                              {button.text}
-                            </Button>
-                          </a>
+                          <Link
+                            key={button.text}
+                            href={button.href}
+                            isExternal
+                            _hover={{
+                              textDecoration: "underline",
+                              fontWeight: "bold",
+                            }}
+                          >
+                            {button.text}
+                          </Link>
                         ))}
                       </HStack>
                       <HStack pt={4} spacing={2}>
@@ -140,7 +146,11 @@ export default function Projects({ color }) {
                             <Link
                               key={button.text}
                               href={button.href}
-                              color={`${color}.400`}
+                              isExternal
+                              _hover={{
+                                textDecoration: "underline",
+                                fontWeight: "bold",
+                              }}
                             >
                               {button.text}
                             </Link>

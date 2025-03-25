@@ -89,7 +89,17 @@
 - ![us-navy_logo](../assets/us_navy_logo.jpg)
 - Tags: Other
 - Badges:
-  - Badge [blue]
+  - Veteran [blue]
 - List Items:
   - Served onboard the USS Harry S Truman CVN75 (aircraft carrier).
   - Deployed in 2010 to provide support for conflicts in Irag and Afghanistan.
+
+## Colorado Marijuana Enforcement Divsion
+- *Supervisory Compliance Investigator* | Nov'16 - May'19
+- ![med-logo](../assets/med-logo.png)
+- Tags: Other
+- Badges:
+  - Compliance [orange]
+- List Items:
+  - Co-managed team of 6 compliance investigators.
+  - Participated in legislative rule-making.
